@@ -40,6 +40,7 @@ root_functions() {
 	python-virtualenv
 	spotify-client
 	vagrant
+	VirtualBox
     )
     export packages
 
