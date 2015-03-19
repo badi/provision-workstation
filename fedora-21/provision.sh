@@ -39,6 +39,7 @@ root_functions() {
 	python-pip
 	python-virtualenv
 	spotify-client
+	vagrant
     )
     export packages
 
