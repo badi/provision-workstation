@@ -31,6 +31,7 @@ root_functions() {
 	evolution-ews
 	evolution-mapi
 	git
+        graphviz
 	kdenlive
 	keepass
 	openssh-server
