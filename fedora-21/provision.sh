@@ -27,7 +27,6 @@ root_functions() {
 	dpkg
 	emacs
 	emacs-color-theme
-	emacs-nox
 	evolution
 	evolution-ews
 	evolution-mapi
