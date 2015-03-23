@@ -12,6 +12,10 @@ root_functions() {
 
     set -xe
 
+    copr_repos=(
+        phracek/PyCharm
+    )
+
     extra_repos=(
 	https://repos.fedorapeople.org/repos/spot/chromium/fedora-chromium-stable.repo
 	http://negativo17.org/repos/fedora-spotify.repo
@@ -32,6 +36,7 @@ root_functions() {
 	keepass
 	openssh-server
 	patchelf
+        pycharm-community
 	pyflakes
 	python
 	python-devel
@@ -55,6 +60,11 @@ export -f root_functions
 
 
 add_repos() {
+    yum install -y yum-plugin-copr
+    for repo in ${copr_repos[@]}; do
+        yum -y copr enable $repo
+    done
+
     yum localinstall --nogpgcheck -y \
 	http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 	http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
