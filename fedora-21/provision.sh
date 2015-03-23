@@ -90,7 +90,7 @@ export -f configure_ssh
 
 
 configure_cronjobs() {
-    sed -i 's/START_HOURS_RANGE=3-22/START_HOURS_RANGE=19-7/' /etc/anacrontab
+    sed -i 's/START_HOURS_RANGE=3-22/START_HOURS_RANGE=19-23/' /etc/anacrontab
     echo 'yum -y --skip-broken --exclude=kernel\* update' >/etc/cron.daily/system-updateEOF
     chmod +x /etc/cron.daily/system-update
     systemctl restart crond
