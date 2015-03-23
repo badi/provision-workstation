@@ -28,6 +28,7 @@ root_functions() {
 	evolution-ews
 	evolution-mapi
 	git
+	kdenlive
 	keepass
 	openssh-server
 	patchelf
