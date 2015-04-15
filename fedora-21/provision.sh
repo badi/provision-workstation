@@ -18,8 +18,8 @@ root_functions() {
     )
 
     extra_repos=(
-	https://repos.fedorapeople.org/repos/spot/chromium/fedora-chromium-stable.repo
-	http://negativo17.org/repos/fedora-spotify.repo
+        https://repos.fedorapeople.org/repos/spot/chromium/fedora-chromium-stable.repo
+        http://negativo17.org/repos/fedora-spotify.repo
         http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
     )
     export extra_repos
