@@ -14,6 +14,7 @@ root_functions() {
 
     copr_repos=(
         phracek/PyCharm
+        nickth/ssr
     )
 
     extra_repos=(
@@ -55,6 +56,9 @@ root_functions() {
         VirtualBox
         kmod-VirtualBox
 
+        blender
+        smplayer
+        ssr
     )
     export packages
 
