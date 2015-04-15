@@ -29,9 +29,6 @@ root_functions() {
         dpkg
         emacs
         emacs-color-theme
-        evolution
-        evolution-ews
-        evolution-mapi
         git
         gitk
         graphviz
