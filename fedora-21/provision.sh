@@ -35,7 +35,7 @@ root_functions() {
 	git
         gitk
         graphviz
-	kdenlive
+        graphviz-devel
 	keepass
 	openssh-server
 	patchelf
