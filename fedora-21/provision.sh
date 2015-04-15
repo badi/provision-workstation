@@ -19,6 +19,7 @@ root_functions() {
     extra_repos=(
 	https://repos.fedorapeople.org/repos/spot/chromium/fedora-chromium-stable.repo
 	http://negativo17.org/repos/fedora-spotify.repo
+        http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
     )
     export extra_repos
 
@@ -45,9 +46,15 @@ root_functions() {
 	python-jedi
 	python-pip
 	python-virtualenv
-	spotify-client
-	vagrant
-	VirtualBox
+
+        vagrant
+        glibc-headers
+        glibc-devel
+        kernel-headers
+        kernel-devel
+        VirtualBox
+        kmod-VirtualBox
+
     )
     export packages
 
