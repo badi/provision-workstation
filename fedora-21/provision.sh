@@ -112,11 +112,11 @@ configure_cronjobs() {
 export -f configure_cronjobs
 
 
-create_venv() {
-    test -d $MY_VENV && return 1
-    virtualenv $MY_VENV
+setup_venv() {
+    test -d $VENV_DIR || mkdir -vp $VENV_DIR
 }
+
 
 su -c root_functions
 
-create_venv
+setup_venv
