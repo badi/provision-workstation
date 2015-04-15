@@ -25,28 +25,28 @@ root_functions() {
     export extra_repos
 
     packages=(
-	dopbox
-	dpkg
-	emacs
-	emacs-color-theme
-	evolution
-	evolution-ews
-	evolution-mapi
-	git
+        dopbox
+        dpkg
+        emacs
+        emacs-color-theme
+        evolution
+        evolution-ews
+        evolution-mapi
+        git
         gitk
         graphviz
         graphviz-devel
-	keepass
-	openssh-server
-	patchelf
+        keepass
+        openssh-server
+        patchelf
         pycharm-community
-	pyflakes
-	python
-	python-devel
-	python-flake8
-	python-jedi
-	python-pip
-	python-virtualenv
+        pyflakes
+        python
+        python-devel
+        python-flake8
+        python-jedi
+        python-pip
+        python-virtualenv
         spotify-client
         thunderbird
 
@@ -80,11 +80,11 @@ add_repos() {
     done
 
     yum localinstall --nogpgcheck -y \
-	http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-	http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+        http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+        http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
     for repo in ${extra_repos[@]}; do
-	yum-config-manager --add-repo=$repo
+        yum-config-manager --add-repo=$repo
     done
 }
 export -f add_repos
