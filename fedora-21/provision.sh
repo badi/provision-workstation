@@ -47,6 +47,7 @@ root_functions() {
 	python-jedi
 	python-pip
 	python-virtualenv
+        spotify-client
 
         vagrant
         glibc-headers
