@@ -35,6 +35,7 @@ root_functions() {
         graphviz-devel
         keepass
         libvirt
+        libvirt-devel
         openssh-server
         patchelf
         pycharm-community
@@ -50,6 +51,7 @@ root_functions() {
 
         vagrant
         ruby-devel
+        ruby-libvirt
         glibc-headers
         glibc-devel
         kernel-headers
