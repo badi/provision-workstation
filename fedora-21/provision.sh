@@ -34,6 +34,7 @@ root_functions() {
         graphviz
         graphviz-devel
         keepass
+        libvirt
         openssh-server
         patchelf
         pycharm-community
