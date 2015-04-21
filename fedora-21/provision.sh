@@ -49,6 +49,7 @@ root_functions() {
         thunderbird
 
         vagrant
+        ruby-devel
         glibc-headers
         glibc-devel
         kernel-headers
